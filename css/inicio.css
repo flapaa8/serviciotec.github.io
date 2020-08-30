@@ -136,3 +136,34 @@ article img{
     width: 100%;
     margin-top: 20px;
 }
+
+@media screen and (max-width:1220px){
+
+    
+    .container-content{
+        max-width: 1000px;
+        padding: 0px    20px;
+    }
+}
+@media screen and (max-width:1020px){
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    article{
+        box-shadow: 0 0 0 0;
+    }
+    .container-aside{
+        display: flex;
+        justify-content: center;
+    }
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width:800px){
+    .container-aside{
+        flex-wrap: wrap;
+    }
+}

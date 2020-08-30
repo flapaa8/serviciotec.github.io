@@ -11012,3 +11012,6 @@ table-primary, table-secondary, table-success, table-info, table-warning, table-
 .list-group {
   font-size: 0.930125rem;
 }
+.card-body:hover{
+  opacity: 1;
+}

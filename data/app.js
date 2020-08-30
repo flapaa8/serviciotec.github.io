@@ -71,7 +71,9 @@ document.getElementById('product-form')
 
         //Nuevo Producto
         const product = new Product(name, price, year, link, specification, category);
-        localStorage.setItem('product', JSON.stringify(this.product));
+        var prodUploaded = [];
+        prodUploaded = prodUploaded.push(product);
+        localStorage.setItem('prodUploaded', JSON.stringify(prodUploaded));
 
         
         const ui = new UI();
@@ -95,3 +97,6 @@ document.getElementById('product-list')
         ui.deleteProduct(e.target);
         e.preventDefault();
     });
+    
+   
+    

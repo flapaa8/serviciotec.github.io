@@ -72,7 +72,8 @@ document.getElementById('product-form')
         //Nuevo Producto
         const product = new Product(name, price, year, link, specification, category);
         var prodUploaded = [];
-        prodUploaded = prodUploaded.push(product);
+        prodUploaded.push(product);
+        console.log(prodUploaded);
         localStorage.setItem('prodUploaded', JSON.stringify(prodUploaded));
 
         

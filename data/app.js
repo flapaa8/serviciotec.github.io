@@ -22,13 +22,14 @@ class UI {
                     <strong>Modelo</strong>: ${product.category} <br> -
                     <strong>Precio</strong>: ${product.price} - <br>
                     <strong>Especificaciones</strong>: ${product.specification} <br>
-                    <strong> Img </strong>: ${product.year}
+                    
                     <a href="#" class="btn btn-danger" name="delete">Eliminar</a>
+                    
                 </div>
             </div>
         `;
         productList.appendChild(element);
-        
+
     }
 
     resetForm() {
@@ -76,11 +77,11 @@ document.getElementById('product-form')
         console.log(prodUploaded);
         localStorage.setItem('prodUploaded', JSON.stringify(prodUploaded));
 
-        
+
         const ui = new UI();
 
         // Validacion de campos
-        if (name === '' || price === '' || year === '' ||  link === '' ) {
+        if (name === '' || price === '' || year === '' || link === '') {
             ui.showMessage('Por favor inserte todos los campos', 'danger');
         }
 
@@ -98,6 +99,7 @@ document.getElementById('product-list')
         ui.deleteProduct(e.target);
         e.preventDefault();
     });
-    
-   
-    
+
+
+
+

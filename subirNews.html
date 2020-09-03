@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Articulos | Servicio Tec</title>
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="styles/subirNews.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="header-content">
+            <div class="logo">
+                <h1> Servicio <b>Tec</b></h1>
+                <h2 class="report">Subir Novedades</h2>
+            </div>
+            
+        </div>
+    </header>
+    <div class="container-content">
+        <article>
+
+            <h1><input type="text" placeholder="Titulo del articulo" id="title"></h1>
+
+            <p><input type="text" id="resumen" >
+                
+            </p>
+            <h1><input type="text" placeholder="Subtitulo del articulo" id="subtitle"></h1>
+
+            <p><input type="text" id="subtitleResume">
+            </p>
+            <input type="file" id="image">
+            <input type="text" id="contenido">
+            <input type="button" id="subir" value="Subir!">
+        </article>
+        <script src="data/upload.js"></script>
+</body>
+
+</html>

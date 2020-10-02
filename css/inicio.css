@@ -184,7 +184,7 @@ article img{
         flex-direction: column;
     }
     article{
-        margin-top: 510px;
+        
         box-shadow: 0 0 0 0;
     }
     .container-aside{
@@ -196,16 +196,29 @@ article img{
         margin: 10px;
     }
 }
-.box{
-    flex-direction: column;
-    margin-top: 90px;
-}
-.subinfo{
-    width: 100%;
-    margin: 0;
-}
+
 @media screen and (max-width:800px){
     .container-aside{
         flex-wrap: wrap;
+    }
+    .box{
+        flex-direction: column;
+        margin-top: 90px;
+    }
+    .subinfo{
+        width: 100%;
+        margin: 0;
+        padding-top: 10px;
+    }
+    .subinfo i{
+       
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article{
+        margin-top: 510px;
     }
 }

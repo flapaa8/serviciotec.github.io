@@ -1,5 +1,10 @@
 
+body{
+    background-color:#46a2fd;
+}
+
 .formulario{
+    border-radius: 6px;
     width: 500px;
     margin: auto;
     display: flex;
@@ -12,19 +17,30 @@
     margin-top: 180px;
     height: 400px;
     flex-direction: column;
+    background-color: floralwhite;
 }
 .formulario__titulo{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: rgba(0,0,0,0.7);
 }
-.formulario__label{
-    margin-top: 15px;
-}
+
 .formulario__submit{
     margin-top: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #6DECAF;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 0  4px  25px    -22px   black;
+    border: none;
 }
+.formulario_input{
+    border-radius: 8px;
+}
+
 
 @media screen and (max-width:800px){
     

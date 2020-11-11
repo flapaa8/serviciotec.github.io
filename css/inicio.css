@@ -222,3 +222,14 @@ article img{
         margin-top: 510px;
     }
 }
+@media screen and (max-width:576px){
+    .title{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .box{
+        flex-direction: column;
+        margin-top: 90px;
+    }
+    
+}
